@@ -1,5 +1,5 @@
 {
-  "name": "react-native-firebase",
+  "name": "react-native-firebase-push",
   "version": "5.6.0",
   "author": "Invertase <oss@invertase.io> (http://invertase.io)",
   "description": "A well tested, feature rich Firebase implementation for React Native, supporting iOS & Android. Individual module support for Admob, Analytics, Auth, Crash Reporting, Cloud Firestore, Database, Dynamic Links, Functions, Messaging (FCM), Remote Config, Storage and more.",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/invertase/react-native-firebase.git"
+    "url": "git+https://github.com/invertase/react-native-firebase.git"
   },
   "jest": {
     "preset": "jest-react-native",
@@ -127,5 +127,12 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/invertase/react-native-firebase/issues"
+  },
+  "homepage": "https://github.com/invertase/react-native-firebase#readme",
+  "directories": {
+    "test": "tests"
   }
 }
