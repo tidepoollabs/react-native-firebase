@@ -16,6 +16,7 @@ export type QueryOperator =
   | '=='
   | '>'
   | '>='
+  | 'in'
   | 'array-contains';
 
 export type GetOptions = {
@@ -46,25 +47,25 @@ export type NativeDocumentSnapshot = {
 
 export type NativeTypeMap = {
   type:
-    | 'nan'
-    | 'infinity'
-    | 'array'
-    | 'boolean'
-    | 'date'
-    | 'blob'
-    | 'documentid'
-    | 'fieldvalue'
-    | 'timestamp'
-    | 'geopoint'
-    | 'null'
-    | 'number'
-    | 'object'
-    | 'reference'
-    | 'string',
+  | 'nan'
+  | 'infinity'
+  | 'array'
+  | 'boolean'
+  | 'date'
+  | 'blob'
+  | 'documentid'
+  | 'fieldvalue'
+  | 'timestamp'
+  | 'geopoint'
+  | 'null'
+  | 'number'
+  | 'object'
+  | 'reference'
+  | 'string',
   value: any,
 };
 
 export interface SnapshotErrorInterface extends NativeErrorInterface {
   +path: string;
-  +appName: string;
++appName: string;
 }

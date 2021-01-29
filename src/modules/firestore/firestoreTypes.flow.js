@@ -16,6 +16,7 @@ export type QueryOperator =
   | '=='
   | '>'
   | '>='
+  | 'in'
   | 'array-contains';
 
 export type GetOptions = {

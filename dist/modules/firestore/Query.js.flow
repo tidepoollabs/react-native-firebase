@@ -35,24 +35,25 @@ const OPERATORS: { [QueryOperator]: string } = {
   '>=': 'GREATER_THAN_OR_EQUAL',
   '<': 'LESS_THAN',
   '<=': 'LESS_THAN_OR_EQUAL',
+  'in': 'EQUAL_TO_ANY_OF_THE_FOLLOWING',
   'array-contains': 'ARRAY_CONTAINS',
 };
 
 type NativeFieldPath = {|
   elements?: string[],
-  string?: string,
-  type: 'fieldpath' | 'string',
+    string ?: string,
+    type: 'fieldpath' | 'string',
 |};
 
 type FieldFilter = {|
   fieldPath: NativeFieldPath,
-  operator: string,
-  value: any,
+    operator: string,
+      value: any,
 |};
 
 type FieldOrder = {|
   direction: string,
-  fieldPath: NativeFieldPath,
+    fieldPath: NativeFieldPath,
 |};
 
 type QueryOptions = {
@@ -441,7 +442,7 @@ export default class Query {
     ) {
       throw new Error(
         'Cannot specify an orderBy() constraint after calling ' +
-          'startAt(), startAfter(), endBefore() or endAt().'
+        'startAt(), startAfter(), endBefore() or endAt().'
       );
     }
 

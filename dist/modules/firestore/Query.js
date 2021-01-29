@@ -23,6 +23,7 @@ const OPERATORS = {
   '>=': 'GREATER_THAN_OR_EQUAL',
   '<': 'LESS_THAN',
   '<=': 'LESS_THAN_OR_EQUAL',
+  'in': 'EQUAL_TO_ANY_OF_THE_FOLLOWING',
   'array-contains': 'ARRAY_CONTAINS'
 };
 
